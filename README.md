@@ -56,3 +56,15 @@ An application to automate downloading media
 5. Install lodash
 
    - `npm i lodash`
+
+6. Create initial bundled `main.js`
+
+   - `npx webpack`
+
+7. Run bundler with a specified config file
+
+   - `npx webpack --config webpack.config.js`
+
+8. Add npm script to `package.json` to launch bundler
+
+   - `"build": "webpack"`
