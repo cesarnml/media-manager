@@ -19,9 +19,14 @@
   },
   "homepage": "https://github.com/cesarnml/media-manager#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
     "css-loader": "^4.3.0",
     "eslint": "^7.9.0",
+    "eslint-plugin-react": "^7.21.2",
+    "file-loader": "^6.1.0",
     "style-loader": "^1.2.1",
+    "typescript": "^4.0.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },

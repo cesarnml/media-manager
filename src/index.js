@@ -1,12 +1,18 @@
 import { join } from 'lodash'
 import './style.css'
+import photo from './assets/img/photo.jpg'
 
 function component() {
   const element = document.createElement('div')
 
-  // Lodash, currently included via a script, is required for this line to work
   element.innerHTML = join(['Hello', 'webpack'], ' ')
   element.classList.add('hello')
+
+  // Add the image to our existing div
+  const myPhoto = new Image()
+  myPhoto.src = photo
+
+  element.appendChild(myPhoto)
 
   return element
 }

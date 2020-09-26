@@ -49,6 +49,7 @@ An application to automate downloading media
 2. Install eslint locally
 
    - `npm i -D eslint`
+   - configure eslint with `eslint --init`
 
 3. Change `package.json` to:
 
@@ -75,6 +76,10 @@ An application to automate downloading media
 
 #### Webpack Asset Mangement
 
-1. Install style-loader and css-loader
+1. Install `style-loader` and `css-loader`
 
-   - npm i -D style-loader css-loader
+   - `npm i -D style-loader css-loader`
+
+2. Install `file-loader`
+
+   - `npm i -D file-loader`
