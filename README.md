@@ -80,6 +80,10 @@ An application to automate downloading media
 
    - `npm i -D style-loader css-loader`
 
-2. Install `file-loader`
+2. Install `file-loader` for images and fonts
 
    - `npm i -D file-loader`
+
+3. Install `csv-loader` for csv files
+
+   - `npm i -D csv-loader`
