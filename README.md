@@ -7,6 +7,8 @@ An application to automate downloading media
   - [Backend](#backend)
   - [Services](#services)
   - [DevOps](#devops)
+  - [Notes](#notes)
+    - [Frontend Boilerplate](#frontend-boilerplate)
 
 ## Frontend
 
@@ -31,3 +33,20 @@ An application to automate downloading media
 - [OMDb API](http://www.omdbapi.com/)
 
 ## DevOps
+
+## Notes
+
+### Frontend Boilerplate
+
+1. Install webpack and webpack-cli
+
+   - `npm i webpack webpack-cli`
+
+2. Install eslint locally
+
+   - `npm i eslint`
+
+3. Change `package.json` to:
+
+   - add `"private": true`
+   - delete `"main": "index.js"`

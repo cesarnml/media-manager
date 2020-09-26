@@ -1,0 +1,27 @@
+{
+  "name": "media-manager",
+  "version": "1.0.0",
+  "description": "An application to automate downloading media",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarnml/media-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesarnml/media-manager/issues"
+  },
+  "homepage": "https://github.com/cesarnml/media-manager#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "eslint": "^7.9.0"
+  }
+}
