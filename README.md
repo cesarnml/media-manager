@@ -44,9 +44,15 @@ An application to automate downloading media
 
 2. Install eslint locally
 
-   - `npm i eslint`
+   - `npm i -D eslint`
 
 3. Change `package.json` to:
 
    - add `"private": true`
    - delete `"main": "index.js"`
+
+4. Add `/dist` directory and move `index.html` inside it
+
+5. Install lodash
+
+   - `npm i lodash`
