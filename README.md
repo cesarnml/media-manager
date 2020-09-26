@@ -9,6 +9,8 @@ An application to automate downloading media
   - [DevOps](#devops)
   - [Notes](#notes)
     - [Frontend Boilerplate](#frontend-boilerplate)
+      - [Webpack Getting Started](#webpack-getting-started)
+      - [Webpack Asset Mangement](#webpack-asset-mangement)
 
 ## Frontend
 
@@ -37,6 +39,8 @@ An application to automate downloading media
 ## Notes
 
 ### Frontend Boilerplate
+
+#### Webpack Getting Started
 
 1. Install webpack and webpack-cli
 
@@ -68,3 +72,9 @@ An application to automate downloading media
 8. Add npm script to `package.json` to launch bundler
 
    - `"build": "webpack"`
+
+#### Webpack Asset Mangement
+
+1. Install style-loader and css-loader
+
+   - npm i -D style-loader css-loader
