@@ -9,8 +9,9 @@ An application to automate downloading media
   - [DevOps](#devops)
   - [Notes](#notes)
     - [Frontend Boilerplate](#frontend-boilerplate)
-      - [Webpack Getting Started](#webpack-getting-started)
-      - [Webpack Asset Mangement](#webpack-asset-mangement)
+      - [webpack - Getting Started](#webpack---getting-started)
+      - [webpack - Asset Mangement](#webpack---asset-mangement)
+      - [webpack - Output Management](#webpack---output-management)
 
 ## Frontend
 
@@ -36,11 +37,13 @@ An application to automate downloading media
 
 ## DevOps
 
+- webpack
+
 ## Notes
 
 ### Frontend Boilerplate
 
-#### Webpack Getting Started
+#### webpack - Getting Started
 
 1. Install webpack and webpack-cli
 
@@ -74,7 +77,7 @@ An application to automate downloading media
 
    - `"build": "webpack"`
 
-#### Webpack Asset Mangement
+#### webpack - Asset Mangement
 
 1. Install `style-loader` and `css-loader`
 
@@ -87,3 +90,31 @@ An application to automate downloading media
 3. Install `csv-loader` for csv files
 
    - `npm i -D csv-loader`
+
+#### webpack - Output Management
+
+1. Adjust `file-loader` config to deliver processed resources inside of assets folder
+
+   - `{ test: /\.(png|svg|jpg|gif)$/i, loader: 'file-loader', options: { name: 'assets/images/[name].[ext]' } },`
+   - `{ test: /\.(woff|woff2|eot|ttf|otf)$/, use: { loader: 'file-loader', options: { name: 'assets/fonts/[name].[ext]' } }, },`
+
+2. Adjust `entry` point config to allow for bundle splittting
+
+   ```javascript
+     entry: {
+    app: './src/index.js',
+    print: './src/print.js',
+   },
+   output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+   },
+   ```
+
+3. Install `HtmlWebpackPlugin` (autogenerates `index.html` and links to bundled resources)
+
+   - `npm i -D html-webpack-plugin`
+
+4. Keep `/dist` clean with `clean-webpack-plugin`
+
+   - `npm i -D clean-webpack-plugin`
