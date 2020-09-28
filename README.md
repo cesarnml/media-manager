@@ -1,6 +1,6 @@
 # Media Manager
 
-An application to automate downloading media
+An application to automate managing and downloading entertainment media.
 
 - [Media Manager](#media-manager)
   - [Frontend](#frontend)
