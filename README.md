@@ -17,6 +17,7 @@ An application to automate downloading media
 
 - React
 - ReduxToolkit
+- TypeScript
 - CSSModules
 - SASS
 - TailwindCSS
